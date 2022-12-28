@@ -1,0 +1,79 @@
+section{
+    background-image: url("/Month-2-exam/images/Bitmap.jpg");
+    background-size: cover;
+    position: relative;
+}
+.about{
+    width: 500px;
+    margin-left: 90px;
+}
+.c1{
+    padding: 153px 0 ;
+}
+
+.about-h2{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: var(--color-1);
+    width: 500px;
+}
+
+.about-text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 40px 0;
+    color: var(--color-1);
+}
+.bg-img{
+    position: absolute;
+    top: 345px;
+    left: -50px;
+    z-index: 1;
+}
+.bg-img2{
+    position: absolute;
+    top: 345px;
+    left: 750px;
+    z-index: 1;
+}
+@media screen and (max-width: 880px) {
+    .c1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-h2{
+        text-align: center;
+    }
+    .about{
+        width: 575px;
+        margin-left: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 575px) {
+    section{
+    // background-size: -500px;
+    background-position-x: right;
+
+    }
+    .about-h2{
+        max-width: 311px;
+    }
+    .about{
+        max-width: 320px;
+    }
+    .about-text{
+        // max-width: 350px;
+    }
+}
