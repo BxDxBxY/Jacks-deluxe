@@ -1,0 +1,125 @@
+
+
+.__footer-top{
+    padding: 102px 0;
+    position: relative;
+    background: var(--color-4);
+}
+.__footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+.__footer-section h2{
+    width: 415px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: var(--color-1);
+}
+.__footer-socnet {
+    height: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+.__footer-circles{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // z-index: -1;
+}
+.__footer-nav{
+    background: var(--color-6);
+}
+.__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;   
+    padding: 22px 0;
+    background-color: var(--color-6);
+    position: static;
+}
+.__footer-list{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width:993px) {
+    .__footer-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .__footer-section h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .iff{
+        display: inline-block;
+    }
+    
+}
+.__footer-link-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    height: 24px;
+}
+.__footer-link-icon{
+    &:hover{
+        color: var(--color-8);
+        
+    }
+    color: var(--color-5);
+    transition: all 0s !important;
+}
+@media screen and (max-width:616px) {
+    .ll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+    .__footer-nav{
+        padding-bottom: 80px;
+    }
+    .__footer{
+        display: flex;
+        padding-top: 60px;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+}
+@media screen and (max-width:535px) {
+    .__footer-section h2{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+    }
+    .__footer-socnet{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .__footer-socnet a img{
+        width: 130px !important;
+        height: 40px !important;
+    }
+    .ll{
+        margin-bottom: 80px;
+    }
+}

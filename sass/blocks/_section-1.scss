@@ -1,16 +1,28 @@
 section{
     background-image: url("/Month-2-exam/images/Bitmap.jpg");
     background-size: cover;
-    position: relative;
+    // position: relative;
+}
+.__about-bg{
+    background-image: url("/Month-2-exam/images/bg\ about.png");
+    background-size: cover;
+    background-color: #2F3B59;
+    background-blend-mode: hard-light;
+    z-index: auto;
+    
 }
 .about{
     width: 500px;
     margin-left: 90px;
+    // display: inline-block;
+    z-index: 1 ;
 }
 .c1{
     padding: 153px 0 ;
 }
-
+.c2{
+    padding: 72px 0;
+}
 .about-h2{
     font-weight: 700;
     font-size: 56px;
@@ -18,6 +30,7 @@ section{
     letter-spacing: -2.5px;
     color: var(--color-1);
     width: 500px;
+    z-index: 5;
 }
 
 .about-text{
@@ -25,21 +38,41 @@ section{
     font-size: 15px;
     line-height: 25px;
     margin: 40px 0;
+    z-index: 1;
     color: var(--color-1);
 }
 .bg-img{
     position: absolute;
-    top: 345px;
+    top: 390px;
     left: -50px;
     z-index: 1;
 }
 .bg-img2{
     position: absolute;
-    top: 345px;
+    top: 390px;
     left: 750px;
-    z-index: 1;
+    // z-index: -1;
 }
+
+@media screen and (max-width: 1181px){
+    .bg-img2{
+        top: 506px;
+        left: 135px;
+    }
+    .bg-img{
+        top: 505px;
+    }
+}
+
 @media screen and (max-width: 880px) {
+    .bg-img{
+        display: none;
+    }
+    .bg-img2{
+        top: 546px;
+        left: -135px;
+        // transform: scale(2);
+    }
     .c1{
         display: flex;
         align-items: center;
@@ -63,17 +96,238 @@ section{
 }
 @media screen and (max-width: 575px) {
     section{
-    // background-size: -500px;
-    background-position-x: right;
-
+        background-position-x: right;
+    }
+    .bg-img{
+        display: none;
+    }
+    .bg-img2{
+        left: -271px;
+        top: 510px;
+    }
+    .c1{
+        padding-top: 115px;
+    }
+    .c2{
+        padding: 60px 0;
     }
     .about-h2{
         max-width: 311px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.78571px;
+        color: var(--color-1);
     }
     .about{
         max-width: 320px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
     }
-    .about-text{
-        // max-width: 350px;
+}
+
+
+.bg-stick{
+    position: absolute;
+    width: 974px;
+    height: 15px;
+    left: 0px;
+    top: 954px;
+    background-color: var(--color-8);
+    // border: 15px solid #E5ECF4;
+}
+@media screen and (max-width:1330px){
+    .bg-stick{
+        width: 900px;
+        position: absolute;
+        height: 15px;
     }
+}
+
+
+.circle1{
+    position: absolute;
+    top: 910px;
+    left: 895px;
+}
+.circle2{
+    position: absolute;
+    top: 910px;
+    left: 80px;
+}
+.circle3{
+    position: absolute;
+    top: 910px;
+    left: 480px;
+}
+.__sect2{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+.__section-2{
+    padding-top: 0 !important;
+    padding-bottom: 120px;
+}
+.__sect2-wrapper{
+    width: 350px;
+    z-index: 1;
+    padding-top: 110px;
+}
+.__section2{
+    padding-top: 0 ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.__sect2-wrapper p{
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--color-3);
+}
+.__sect2-wrapper h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: var(--color-4);
+    margin-top: 40px;
+    margin-bottom: 27px;
+}
+.__section2 p{
+    text-align: center;
+}
+.accordions{
+    display: inline-block;
+    width: 65%;
+}
+.__faqs-faq h2{
+    width: 35%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: var(--color-4);
+}
+.__faqs h2{
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: var(--color-4);
+}
+@media screen and (max-width: 994px) {
+    .__sect2{
+        display: flex;
+        // align-items: center;
+        align-items: flex-end;
+        flex-direction: column;
+        // justify-content: space-between;
+    }   
+    .__sect2-wrapper{
+        padding-top: 0;
+        width: 545px;
+    }
+    .bg-stick{
+        transform: rotate(90deg);
+        top: 900px;
+        z-index: -1;
+        left: -300px;
+    }
+    .circle1{
+        top: 950px;
+        left: 100px;
+        display: inline;
+    }
+    .circle2{
+        left: 100px;
+        display: inline-block;
+        top: 1120px;
+    }
+    .circle3{
+        display: block;
+        left: 100px;
+        top: 1290px;
+    }
+    .__faqs-faq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .__section-2{
+        align-items: center;
+    }
+    .__faqs-faq h2{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .accordions{
+        width: 100%;
+    }
+}
+.circl1, .circl2, .circl3{
+    display: none;
+}
+@media screen and (max-width: 790px) {
+    .bg-stick{
+        display: none;
+    }
+    .circle1, .circle2, .circle3{
+        display: none;
+    }
+    .__sect2-wrapper{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+    .circl1, .circl2, .circl3{
+        display: inline;
+    }
+}
+@media screen and (max-width:562px) {
+    .__sect2-wrapper{
+        width: 100%;
+    }
+    .__faqs h2{
+        margin-bottom: 48px;
+    }
+}
+._phcircle{
+    display: block;
+    object-fit: contain;
+}
+.__{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 auto 25px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: var(--color-4);
+}
+.__faqs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 116px;
+}
+
+.__faqs-faq{
+    display: flex;
+    width: 100%;
+    margin-bottom: 44px;
 }
